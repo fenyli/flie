@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我和我的大学</title><!--网站名字-->
+		<link href="css/bbs.css" rel="stylesheet"><!--引入bbs.css文件-->
+        <link rel="stylesheet" href="css/shou.css">
+	</head>
+	<body>
+	<div class="shou">
+		<div class="nav">
+			<div><p class="li_1">我和我的大学<br>ME AND MY UNIVERSITY</p></div>
+			<ul class="ul_1">
+				<li><a href="我和我的大学.html">首页</a>|</li>
+				<li class="line"></li>
+				<li><a href="个人中心.html">个人中心</a>|</li>
+				<li class="line"></li>
+				<li><a href="我的影院.html">我的影院</a>|</li> 
+				<li class="line"></li>
+				<li><a href="我的大学.html">我的大学</a>|</li>
+				<li class="line"></li>
+				<li><a href="留言板.html">留言板</a>|</li> 
+				<li class="line"></li>
+				<li><a href="未来.html">未来</a></li>
+			</ul>
+		</div>
+		<div class="bbs"><!--块元素div，添加class属性-->
+			
+			<div class="post" id="post"><!--块元素div，包含class，id属性-->
+				姓名：<input class="title" placeholder="请输入留言人"  id="sec">
+				留言：<input class="title" placeholder="请输入留言内容" id="title">	
+				<input type="button" class="btn" value="发布" onclick="postSuccess()"><!--input标签包含class、value、onclick属性，在网页中显示出value的值"发布"，点击"发布"，执行postSuccess()函数-->
+			</div>
+			<section><!--定义文档中的节（section、区段）。比如章节、页眉、页脚或文档中的其他部分。-->
+				<ul id="postList"></ul><!--ul有序列表，包含id属性-->
+			</section>
+		</div>
+	
+	</div>
+		<script src="js/留言板.js"></script><!--引入bbs.js文件-->
+	</body>
+</html>
+
