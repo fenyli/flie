@@ -1,0 +1,53 @@
+*{font-family:"微软雅黑";margin: 0px;padding: 0px;}/*选中全局，内外边距为0px，字体微软雅黑，字体大小14px*/
+ul,ol,li{list-style: none;}/*选中ul、ol、li标签，列表样式无*/
+span{
+
+    color: blue;
+    font-weight:bold;
+}
+.sec_play1{
+    height: 1000px;
+    width: auto;
+    margin-bottom: 2px;
+}
+.sec_play1 h1{ font-size:22px;margin-left: 0px;}
+
+.sec_play1 ul>li{/*选中id=play的标签下的ul标签下的子代li标签，向左浮动，宽度220px，高度308px，溢出隐藏，相对位置*/
+    overflow:hidden;
+    position: relative;
+}
+
+.sec_play1 li{
+    float: left;
+}
+
+
+.sec_play1>ul>li{
+    float: left;
+    padding: 5px 0px 5px 35px;
+    margin: 5px 5px 5px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+video {
+    width: 80%;
+    border-radius: 25px;
+    position: relative;
+    top: 220px;
+    left: 50%;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    transform: translate(-50%, -50%);
+    }

@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+span{
+    display: none;
+}
+.left{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 330px;
+    height: 400px;
+    margin-left: 70px;
+    float: left;
+    background-color: lightblue;
+}
+.right{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 330px;
+    height: 400px;
+    margin-left: 520px;
+    background-color: lightpink;
+}
+.left2{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 330px;
+    height: 400px;
+    margin-left: 70px;
+    float: left;
+    background-color: rgb(114, 151, 194);
+}
+.right2{
+    margin-top: 4px;
+    margin-bottom: 2px;
+    width: 330px;
+    height: 400px;
+    margin-left: 520px;
+    background-color: lightskyblue;
+}
+#main{ text-align:center;}/*居中*/
+#float{/*绝对定位，定位元素层级为1，距网页左边30px，网页上边60px*/
+        position:absolute;
+        left:30px;
+        top:60px;
+        z-index:1;
+        }
+#close{/*绝对定位，定位元素层级为2，距网页左边134px，网页上边60px，光标为手型*/
+        position:absolute;
+        top:60px;
+        left:134px;
+        z-index:2;
+        cursor:pointer;
+    }
+#float>img{
+    width: 120px;
+    height: 233px;
+}

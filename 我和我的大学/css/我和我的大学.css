@@ -1,0 +1,87 @@
+*{margin: 0; padding: 0px;}
+.shou{
+    margin: 0 auto;
+}
+
+.div_2{
+            
+            
+    background-color: rgb(255, 255, 255);
+    margin: 0px 0px;
+    padding: 0px;
+    
+}
+
+.div_2 p{
+    padding: 4px 5px 14px 4px;
+    /*display: none;*/
+}
+.div_2 img{
+    padding: 4px 2px 4px 4px;
+    width: 40%;
+    float: left;
+}
+
+.div_3 {
+    
+    background-color: rgb(255, 255, 255);
+    margin-right: 0px;
+    padding: 0px;
+}
+.div_3_1{
+    background-color: aquamarine;
+    width: 165px;
+    height: 245px;
+    margin-left: 2px;
+    padding-left: 4px;
+    float: left;
+}
+.div_3_1 ul{
+    padding-left: 4px;
+}
+.div_3_2{
+    
+    margin-left: 175px;
+    width: 737px;
+    height: 245px;
+    background-color: aquamarine;
+}
+.div_3_2 ul h3{
+    border-bottom: 9px double rgb(75, 75, 241);
+}
+.div_3_2 ul li{
+    border-bottom: 2px solid rgb(103, 103, 231);
+    font-size: 20px;
+}
+.div_kexue div img{
+        border-bottom: 4px solid #1f87a0;
+        margin-left: 2px;
+        width: 454px;
+        height: 226px;
+        
+}
+.div_ul_kexue{
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #d9d9ff;
+}
+
+.kexue_p{
+    border-top: 3px solid #1f87a0;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.kexue_p p{
+    background-color: #d9d9ff; 
+}
+h2{
+    background-color: aqua;
+    margin: 2px 2px 2px 2px;
+    
+}
+.last{
+    margin: 2px;
+    background-color: rgb(15, 15, 136);
+    color: #ffffff;
+    text-align: center;
+}

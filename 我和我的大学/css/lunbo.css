@@ -1,0 +1,61 @@
+.ul_2, li {/*为ul，li标签设置样式*/
+	padding: 0;/*内边距为0px*/
+	margin: 0 auto;/*外边距为0px*/
+	list-style: none;/*列表样式无*/
+}
+.adver {/*为class=adver的标签设置样式*/
+	/*margin: 0 auto;/*外边距为0px，居中*/
+	/*宽度500px*/
+	/*overflow: hidden;元素内的内容溢出的时候使它隐藏溢出的部分*/
+	height: 460px;/*高度270px*/
+	position: relative;/*相对位置*/
+	padding-left: 100px;
+	background: url("../images/lunbo1.jpg");/*背景图通过url获得*/
+	/*float: left;*/
+}
+.ul_2{ /*为ul标签设置样式*/
+	position: absolute;/*绝对位置*/
+	bottom: 10px;/*该对象距下个对象10px*/
+	z-index: 100;/*层级100，数值大的覆盖数值小的*/
+	width: 80%;/*宽度占满*/
+	
+	text-align: center;/*居中对齐*/
+}
+.ul_2 li {/*为ul中的li标签设置样式*/
+
+	display: inline-block;/*用于水平而不是垂直地显示列表项*/
+	font-size: 10px;/*字体大小10px*/
+	line-height: 20px;/*行高20px*/
+	font-family: "微软雅黑";/*字体微软雅黑*/
+	margin: 0 auto;/*外边距上边距为0px，左边距为1px*/
+	width: 20px;/*宽度20px*/
+	height: 20px;/*高度20px*/
+	border-radius: 50%;/*边框为一个圆*/
+	background: #333333;/*背景色为黑色*/
+	text-align: center;/*文本居中对齐*/
+	color: #ffffff;/*字体白色*/
+}
+.arrowLeft, .arrowRight {/*为class=arrowLeft和class=arrowRight的标签设置样式*/
+	position: absolute;/*绝对位置*/
+	width: 30px;/*宽度30px*/
+	background: rgba(0, 0, 0, 0.2);/*背景色*/
+	height: 50px;/*高度50px*/
+	line-height: 50px;/*行高50px*/
+	text-align: center;/*文本居中对齐*/
+	top: 200px;/*距网页上边300px*/
+	z-index: 150;/*层级150*/
+	font-family: "微软雅黑";/*字体微软雅黑*/
+	font-size: 28px;/*字体大小28px*/
+	font-weight: bold;/*字体加粗*/
+	cursor: pointer;/*移到该标签时鼠标由箭头变为手型*/
+	display: none;/*隐藏改标签*/
+}
+.arrowLeft{/*为class=arrowLeft的标签设置样式*/
+	left: 10px;/*距左边距离10px*/
+}
+.arrowRight{/*为class=arrowRight的标签设置样式*/
+	right: 10px;/*距右边距离10px*/
+}
+.ul_2 > li:nth-of-type(1){/*为第一个li标签设置样式*/
+	background:orange;/*背景色橙色*/
+}

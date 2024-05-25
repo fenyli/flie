@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我和我的大学</title><!--网站名字-->
+		<link rel="stylesheet" href="css/shou.css">
+		<link rel="stylesheet" href="css/我的大学.css">
+	</head>
+	<body>
+	<div class="shou">
+		<div class="nav">
+			<div><p class="li_1">我和我的大学<br>ME AND MY UNIVERSITY</p></div>
+			<ul class="ul_1"> 
+				<li><a href="我和我的大学.html">首页</a>|</li>
+				<li class="line"></li>
+				<li><a href="个人中心.html">个人中心</a>|</li>
+				<li class="line"></li>
+				<li><a href="我的影院.html">我的影院</a>|</li> 
+				<li class="line"></li>
+				<li><a href="我的大学.html">我的大学</a>|</li>
+				<li class="line"></li>
+				<li><a href="留言板.html">留言板</a>|</li> 
+				<li class="line"></li>
+				<li><a href="未来.html">未来</a></li>
+			</ul>
+		</div>
+		
+<audio src="" autoplay="autoplay" loop hidden></audio>
+
+
+<div class="sec_play1"><!--section标签含有id=play属性-->
+	<div style="margin-left: 40px;">
+        <h1 style="margin-top: 2px;font-size: 30px;background-color: rgb(40, 180, 226);width: 92px;color: rgb(0, 0, 151);">图书馆</h1>
+        <p style="font-size: 17px;background-color: rgb(40, 180, 226);width: 205px;margin-top: 2px;color: rgb(0, 0, 0);">最好的时光，是读书的岁月</p>
+        <p><span>115.09</span>万册纸质图书，<span>277.71万册</span>数字图书，<span>83.4TB</span>在线图书资料和专属数据库资源，任你书海遨游。</p>
+    </div>
+	<ul><!--无序列表-->
+		<li><img src="images/book (1).png" width="840px" height="500px" alt="1"></li><!--列表内容，img标签引入图片，p标签，span标签-->
+		<li><img src="images/book (2).png" width="445px" height="350px" alt="1"></li>
+		<li><img src="images/book (3).png" width="310px" height="230px" alt="1"></li>
+	</ul>
+</div>
+<div class="sec_play1"><!--section标签含有id=play属性-->
+	<div style="margin-left: 40px;">
+        <h1 style="font-size: 30px;background-color: rgb(40, 180, 226);width: 122px;color: rgb(0, 0, 151);">学生食堂</h1>
+        <p style="font-size: 17px;background-color: rgb(40, 180, 226);width: 155px;margin-top: 2px;color: rgb(0, 0, 0);">美味，同样必不可少</p>
+        <p>每天提供<span>200余</span>种色味俱佳的菜肴，能较好地满足不同地区学生的饮食习惯。<span></p>
+    </div>
+	<ul><!--无序列表-->
+		<li><img src="images/shitang (1).png" width="805px" height="500px" alt="1"></li><!--列表内容，img标签引入图片，p标签，span标签-->
+		<li><img src="images/shitang (2).png" width="380px" height="350px" alt="1"></li>
+		<li><img src="images/shitang (3).png" width="380px" height="350px" alt="1"></li>
+		
+	</ul>
+</div>
+<div class="sec_play1"><!--section标签含有id=play属性-->
+	<div style="margin-left: 40px;">
+        <h1 style="font-size: 30px;background-color: rgb(40, 180, 226);width: 122px;color: rgb(0, 0, 151);">学生宿舍</h1>
+        <p style="font-size: 17px;background-color: rgb(40, 180, 226);width: 205px;margin-top: 2px;color: rgb(0, 0, 0);">学会休息，才能更好地学习</p>
+        <p>宿舍标准为<span>6人/间</span>，公寓化管理，空调、洗衣机、无线WIFI、独立卫生间、集中热水供应等设备一应俱全。<span></p>
+    </div>
+	<ul><!--无序列表-->
+		<li><img src="images/sushe (3).png" width="800px" height="500px" alt="1"></li><!--列表内容，img标签引入图片，p标签，span标签-->
+		<li><img src="images/sushe (1).png" width="380px" height="350px" alt="1"></li>
+		<li><img src="images/sushe (2).png" width="380px" height="350px" alt="1"></li>
+
+	</ul>
+</div>
+<div style="margin:0 auto 2px;width: 390px;height: 40px;background-color: aqua;">想了解更多关于我的大学——重庆第二师范学院请点击<a href="https://cque.edu.cn/" style="text-decoration: none;">https://cque.edu.cn/</a></div>
+</div>
+<script src="js/jQuery.js"></script>
+<script>
+	$(document).ready(function(){//文件加载完毕后执行函数
+	$(".sec_play ul li").mousemove(function(){//选中id=play标签下的ol标签下的所有子代li标签，当鼠标移到标签时执行
+		$(this).find(":hidden").show();//显示
+	})
+	$(".sec_play ul li").mouseout(function(){//选中id=play标签下的ol标签下的所有子代li标签，当鼠标移开标签时执行
+		$(".sec_play ul li span:visible").hide();//隐藏
+	})
+
+});
+</script>
+	</body>
+</html>
+

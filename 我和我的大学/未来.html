@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我和我的大学</title>
+        <link rel="stylesheet" href="css/shou.css">
+        <link rel="stylesheet" href="css/未来.css">
+	</head>
+	<body>
+	<div class="shou">
+		<div class="nav">
+			<div><p class="li_1">我和我的大学<br>ME AND MY UNIVERSITY</p></div>
+			<ul class="ul_1">
+				<li><a href="我和我的大学.html">首页</a>|</li>
+				<li class="line"></li>
+				<li><a href="个人中心.html">个人中心</a>|</li>
+				<li class="line"></li>
+				<li><a href="我的影院.html">我的影院</a>|</li> 
+				<li class="line"></li>
+				<li><a href="我的大学.html">我的大学</a>|</li>
+				<li class="line"></li>
+				<li><a href="留言板.html">留言板</a>|</li> 
+				<li class="line"></li>
+				<li><a href="未来.html">未来</a></li>
+			</ul>
+		</div>
+		<div class="left">
+			<h2>1.自我分析</h2><br>
+		<span><h4>性格与价值观</h4>做事有耐心，善于倾听，有奋进向上的勇气和毅力；
+			有不惧困难、不怕失败，大不了重头再来的信心与勇气。
+			有自己的立场，不会轻易的因外界因素而改变自己的看法或决定。
+			<h4><br>能力与特长</h4>喜欢研究且解决抽象的问题，喜欢运用心智能力去观察、分析、推理，喜欢与符号、概念、文字、抽象思考有关的活动；
+			个性独立、温和、谨慎、理性、有逻辑，喜欢从事需要动脑的研究性工作。
+		</span>
+		</div>
+		<div class="right">
+			<h2>2.已有技能</h2><br>
+		<span>HTML5、CSS3、JavaScript、jQuery.js框架。
+			java/c编程语言、数据结构、tomcat、servlet+jsp、
+			mysql+sql语句（crud）、jdbc工具类的使用。
+		</span>
+		</div>
+		<div class="left2">
+			<h2>3.家人寄语</h2>
+			<span><br>第一，不要待在寝室里；<br>第二，勇于尝试尽可能多的、不同的东西。<br><br>
+				抓住机遇、敢于尝试、珍惜缘分，也试着正己立身，寻找自己合适的路，做自己想做的人。<br><br>
+				在我看来最重要的一点就是不要太相信自己的自律性。最好可以找一个小伙伴和自己一起，互相督促；
+				手机什么的该戒的就戒掉。另外我刚刚说到的信念感也很重要，需要想清楚自己想要做的事情是什么；
+				而且也要告诉自己考研不是全部，路不止一条，不要给自己太大的压力。</span>
+		</div>
+		<div class="right2">
+			<h2>4.我的想法</h2>
+			<span>
+				<br>考研--现在大学生已经有很多了，只有再次提升自己的学历，掌握更多的知识，才能更好的
+				走向社会。<br><br>这个暑假要开始准备了。加油<br><br>你可以的！
+			</span>
+		</div>
+		
+	</div>
+	<div id="close" onClick="adv_close()"><img src="images/close.jpg"></div> <!--点击该图时，执行adv_close()方法-->
+    <div id="float"><img src="images/jinzhi.png"></div>
+
+	<script src="js/jQuery.js" type="text/javascript"></script>
+	<script>
+		 $(document).ready(
+                $("div").mouseover(function(){
+                    $("div>span").show();
+					
+                }).mouseout(function(){
+		        $("div>span").hide();
+                })	
+            )
+function adv_close(){//隐藏close，float的内容
+    document.getElementById("close").style.display="none";
+    document.getElementById("float").style.display="none";
+    }
+    var closeTop;
+    var closeLeft;
+    var floatTop;
+    var floatLeft;
+    var closeObject;
+    var floatObject;
+    function place(){//针对IE浏览器，fireFox浏览器浏览器做样式配置
+    closeObject=document.getElementById("close");
+    floatObject=document.getElementById("float");
+    if(closeObject.currentstyle){//IE浏览器
+    closeTop=parseInt(closeObject.currentstyle.top);
+    closeLeft=parseInt(closeObject.currentstyle.left);
+    floatTop=parseInt(floatObject.currentstyle.top);
+    floatLeft=parseInt(floatObject.currentStyle.left);
+    }
+    else{//fireFox浏览器
+    closeTop=parseInt(document.defaultView.getComputedStyle(closeObject,null).top);
+    closeLeft=parseInt(document.defaultView.getComputedStyle(closeObject,null).left);
+    floatTop=parseInt(document.defaultView.getComputedStyle(floatObject,null).top);
+    floatLeft=parseInt(document. defaultView.getComputedStyle(floatObject,null).left);
+    }
+    }
+    function roll(){//滚动条的设置
+        var closeScrollTop=parseInt(document.documentElement.scrollTop||document.body.scrollTop);
+        var closeScrolllLeft=parseInt(document.documentElement.scrollleft|| document.body.scrollLeft);
+        var floatScrollTop=parseInt(document.documentElement.scrollTop||document.body.scrollTop);
+        var floatScrolllLeft=parseInt(document.documentElement.scrollLeft||document.body.scrollLeft);
+        closeObject.style.top=closeTop+closeScrollTop+"px";
+        closeObject.style.left=closeLeft+closeScrolllLeft+"px";
+        floatObject.style.top=floatTop+floatScrollTop+"px";
+        floatObject.style.left=floatLeft+floatScrolllLeft+"px";
+    }
+    window.onload=place;//网页加载完毕后，立即执行place()方法
+    window.onscroll=roll;//滚动当前页面的时候，添加事件处理函数
+	</script>
+	</body>
+</html>
+

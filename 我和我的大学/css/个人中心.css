@@ -1,0 +1,383 @@
+*{margin: 0; padding: 0px;}
+.shou{
+    margin: 0 auto;
+}
+/* 轮播圆点颜色 */
+#fp-nav ul li a span {
+    background-color: #fff !important;
+}
+/* 左右滑块的样式 */
+.fp-bottom ul {
+    width: 100%;
+    text-align: center;
+}
+/* 三屏的圆点颜色 */
+.fp-bottom ul li a span {
+    background-color: rgb(255, 255, 255);
+}
+
+#dowebok{
+margin: 0 auto;
+width: 914px;
+background-image: linear-gradient(#48f1d5, #fff, #ffa4a4);
+}    
+
+.div_2{
+height: 666px;
+width: 50%;
+background-color: tomato;
+margin: 0px 0px;
+float: left;
+}
+.div_3{
+height: 666px;
+width: 50%;
+background-color: rgb(59, 0, 223);
+margin-right: 0px;
+float: left;
+}
+.div_4{
+background-color: aqua;
+width: 780px;
+height: 399px;
+}
+.imag_1{
+height: 266px;
+width: 266px;
+float: left;
+
+}
+.me{
+font-size: 22px;
+padding-top: 120px;
+
+}
+.ul_2{
+list-style: none;
+}
+.ul_local_home{
+width: 874px;
+height: 30px;
+background-color: rgb(30, 163, 30);
+}
+.local_home{
+margin-left: 100px;
+text-align: center;
+float: left;
+list-style: none;
+}
+.local_home a{
+text-decoration: none;
+font-size: 20px;
+}
+/* -------背景圆点------ */
+.sec1_circle1 {
+background: white;
+background: linear-gradient(
+to right bottom,
+rgba(255, 255, 255, 0.3),
+rgba(255, 255, 255, 0.5)
+);
+height: 10rem;
+width: 10rem;
+position: absolute;
+border-radius: 50%;
+top: 18%;
+right: 50%;
+}
+.sec1_circle2 {
+background: white;
+background: linear-gradient(
+to right bottom,
+rgba(255, 255, 255, 0.5),
+rgba(247, 255, 174, 0.4)
+);
+height: 10rem;
+width: 10rem;
+position: absolute;
+border-radius: 50%;
+bottom: 33%;
+left: 22%;
+}
+.sec1_circle3 {
+background: white;
+background: linear-gradient(
+to right bottom,
+rgba(248, 202, 202, 0.6),
+rgba(255, 255, 255, 0.3)
+);
+height: 10rem;
+width: 10rem;
+position: absolute;
+border-radius: 50%;
+bottom: 23%;
+right:22%;
+}
+
+main{ 
+
+padding-top: 65px;
+border-radius: 15px;
+background-color: rgba(255, 255, 255, 0.3);
+width: 799px;
+height: 500px;
+margin-right: 225px;
+margin-left: 50px;
+}
+.main_left{
+position:absolute;
+margin-top: 0px;
+padding-bottom: 30px;
+padding: 0px;
+text-align: center;
+width: 280px;
+height: 390px;
+border-radius: 15px;
+float: left;
+background-color: rgba(255, 255, 255, 0.3);
+}
+.main_right{ 
+flex: 7;
+margin-left: 322px;
+height: 600px;
+background-color: rgba(255, 255, 255, 0);
+border-radius: 15px;
+overflow: hidden;
+}
+/* .content{ 
+display: none;
+position:absolute;
+margin-left: 0px;
+margin-right: 15px;
+text-align: center;
+width: 530px;
+height: 390px;
+border-radius: 15px;
+background-color: rgb(11, 226, 94);
+}*/
+.content {
+float: right;
+width: 98%;
+height: 390px;
+background-color: rgba(255, 255, 255, 0.3);
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+.hidden{ 
+display: none;
+}
+.current{
+background-color: rgba(255, 255, 255, 0.3);
+border-radius: 15px;
+padding-top: 0px;
+/* 添加过度效果 */
+transition: all 0.5s;
+}
+.myPhoto a{
+text-decoration: none;
+}
+.current a{
+text-decoration: none;
+}
+.myPhoto a img{
+margin-top: 0px;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+}
+.main_left_1{
+padding-top: 10.5px;
+padding-bottom: 10.5px;
+
+}
+.main_left_1 a{
+text-decoration: none;
+
+}
+.touxiang{ 
+padding-top: 15px;
+width: 444px;
+height: 280px;
+}
+
+/* 背景 */
+.sec2 {
+background: linear-gradient(to right top, rgb(255, 214, 224), rgb(255, 162, 184));
+min-height: 30vh;
+background-size: 100%;
+}
+/* 小圆点 */
+.sec2_circle1 {
+background: white;
+background: linear-gradient(
+to right bottom,
+rgba(203, 255, 255, 0.8),
+rgba(237, 255, 254, 0.3)
+);
+height: 10rem;
+width: 10rem;
+position: absolute;
+border-radius: 10%;
+bottom: -10%;
+left: 20%;
+}
+.sec2_circle2 {
+background: white;
+background: linear-gradient(
+to right bottom,
+rgba(206, 255, 228, 0.8),
+rgba(255, 255, 255, 0.3)
+);
+height: 10rem;
+width: 10rem;
+position: absolute;
+border-radius: 10%;
+top: 100%;
+right: 30%;
+transform: rotate(45deg);
+}
+.sec2_circle3 {
+background: white;
+background: linear-gradient(
+to right bottom,
+rgba(255, 225, 225, 0.8),
+rgba(255, 255, 255, 0.3)
+);
+height: 10rem;
+width: 10rem;
+position: absolute;
+border-radius: 10%;
+bottom: -5%;
+right: 40%;
+}
+/* 主体部分 */
+#section2 {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.sec2_main {
+width: 900px;
+height: 600px;
+border-radius: 25px;
+background-color: rgba(255, 255, 255, 0.3);
+overflow: hidden;
+backdrop-filter: blur(0.2rem);
+}
+.sec2_main_head ul {
+width: 900px;
+}
+.sec2_main_head ul li {
+padding: 35px 38px 35px 38px;
+float: left;
+cursor: pointer;
+border-bottom: 1px solid rgba(255, 255, 255, 1);
+transition: all 1s;
+}
+
+.sec2_main_head ul li:hover {
+background-color: rgb(255, 211, 221);
+color: rgb(255, 111, 145);
+}
+.current1 {
+background-color: rgb(255, 111, 145);
+}
+/*  */
+.sec2_main_body_content {
+float: left;
+width: 900px;
+height: 500px;
+}
+/* sec2_main_body */
+.sec2_main_body_content_left {
+float: left;
+width: 20%;
+height: 500px;
+display: flex;
+flex-direction: column;
+}
+.sec2_main_body_content_left p {
+flex: 1;
+display: flex;
+/* justify-content: center; */
+align-items: center;
+text-align: left;
+font-size: 16px;
+color: #426696;
+padding-left: 30px;
+}
+.sec2_main_body_content_right {
+float: right;
+width: 80%;
+height: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.sec2_main_body_content_right img {
+width: 90%;
+height: 90%;
+border-radius: 25px;
+transition: all 1s;
+}
+/* 个人图片 */
+.sec3 {
+background:rgb(94, 236, 255);
+height: 313px;
+width: 100%;
+background-size: 100%;
+}
+#section3_1{ 
+margin-left: 82px;
+}
+.sec3 .slide2{
+height: 310px;
+width: 107px;
+display: flex;
+float: left;
+justify-content: center;
+align-items: center;
+}
+
+.sec3 .slide2 img {
+height: 260px;
+width: 190px;
+border-radius: 25px;
+box-shadow: 0 1px 40px -10px #000;
+}
+
+.sec5 {
+background: linear-gradient(to right top, rgb(255, 187, 187), rgb(255, 102, 102));
+min-height: 30vh;
+background-size: 100%;
+}
+video {
+width: 80%;
+border-radius: 25px;
+position: relative;
+top: 220px;
+left: 50%;
+padding-top: 120px;
+padding-bottom: 20px;
+transform: translate(-50%, -50%);
+}
+.slide{
+float: left;
+
+}
+.slide img{
+border-radius: 20px;
+padding-right: 9px;
+width: 258px;
+height: 226px;
+}
+.sec2_main_head ul li{ 
+list-style: none;
+display: inline-block;
+}
+.sec2_main_head ul li a{ 
+text-decoration: none;
+}

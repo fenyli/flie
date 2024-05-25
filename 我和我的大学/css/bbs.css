@@ -1,0 +1,139 @@
+*{
+    margin: 0 auto;
+    padding: 0px;
+   }
+    body{
+        background-image: url(bjt.png);
+        margin: 0px;
+    }
+    .shou{
+        margin: 0 auto;
+        width: 914px;
+        height: 750px;
+        background-image: url(../images/1-5.png);
+    }
+    .nav{
+        background-image: url(../blue.png);
+        padding-left: 24px;
+        height: 85px;     
+        
+    }
+    .line{
+        padding-right: 22px;
+        color: #ffffff;
+    }
+    .ul_1{
+        text-align: center;
+    }
+    .ul_1 li{
+        list-style: none;
+        float: left;
+        color: #ffffff;
+        padding-top: 7px;
+    }
+    .ul_1 li a{
+        color: #ffffff;
+        text-decoration: none;
+        padding-right: 22px;
+        text-align: center;
+    }
+    .ul_1 li a:hover{
+        text-decoration-line:underline;
+    }
+    .li_1{
+        font-size: 20px;
+        color: #ffffff;
+        font-family: 'Lucida Sans';
+        margin: 0 auto;
+        padding-top: 2px;
+        padding-bottom: 0px;
+    }
+
+ul,li{/*选中ul、li标签*/
+    list-style: none;}/*列表样式无*/
+header{/*选中header标签*/
+    padding: 5px 0;/*上边距为5px*/
+    margin-top: 0px;
+    border-bottom: 1px solid #cecece;/*下边框的粗细、样式、颜色*/
+}
+header span{/*选中header中的span*/
+    display:inline-block;/**/
+    width: 220px;/*宽度220px*/ 
+    height: 50px;/*高度50px*/ 
+    color: #fff;/*字体颜色*/
+    background:#009966;/*背景色*/ 
+    font-size: 18px; /*字体大小18px*/
+    font-weight: bold; /*字体加粗*/
+    text-align: center;/*文本居中对齐*/
+    line-height: 50px; /*行高50px*/
+    border-radius: 8px; /*边框角一个半径为8px的圆角*/
+    cursor : pointer;/*当鼠标移动到该单元格上时，鼠标会由箭头形状改为手的形状*/
+ }
+
+.post .title{/*选中class="post" 和 class="title"的标签*/
+    width: 450px; /*宽度450px*/
+    height : 30px; /*高度30px*/
+    line-height : 30px;/*行高30px*/
+    display: block; /*div显示*/
+    border: 1px #cecece solid;/*边框的粗细、样式、颜色*/ 
+    margin-bottom: 10px;/*下边距为10px*/
+    margin-left: 0px;
+}
+.post select{/*选中class="post"的标签中的select标签*/
+    width: 200px; /*宽度200px*/
+    height : 30px;/*高度30px*/
+}
+.post .content{/*选中class="post" 和 class="content"的标签*/
+    width: 450px; /*宽度450px*/
+    height : 200px; /*高度200px*/
+    display: block;/*div显示*/
+    margin: 10px 0;/*外边距10px*/
+    border: 1px #cecece solid;/*边框的粗细、样式、颜色*/ 
+}
+.post .btn{/*选中class="post" 和 class="btn"的标签*/
+    width: 160px;/*宽度160px*/ 
+    height: 35px; /*高度35px*/
+    color: #fff; /*字体颜色白色*/
+    background: #009966;/*背景色绿色*/
+    border: none;/*边框无*/
+    font-size: 14px;/*字体大小14px*/ 
+    font-weight: bold; /*字体加粗*/
+    text-align: center;/*文本居中对齐*/
+    line-height: 35px; /*行高35px*/
+    margin-left: 292px;
+    border-radius: 8px; /*边框角一个半径为8px的圆角*/
+    cursor : pointer;/*当鼠标移动到该单元格上时，鼠标会由箭头形状改为手的形状*/
+}
+.bbs section ul li{/*选中class="bbs"标签中的section、ul、li标签*/
+    padding: 10px 0px; /*内边距为10px*/
+    border-bottom: 1px #999999 dashed;/*边框的粗细、样式、颜色*/
+    overflow : hidden; }/*当元素内的内容溢出的时候使它隐藏溢出的部分*/
+.bbs section ul li div{/*选中class="bbs"标签中的section、ul、li、div标签*/
+    float: left;/*文本或图像会移至父元素中的左侧*/
+    width: 60px;/*宽度60px*/
+    margin-right: 10px;/*右边距10px*/
+}
+.bbs section ul li div img{/*选中class="bbs"标签中的section、ul、li、img标签*/
+    border-radius : 50%;/*边框角一个圆*/
+    width: 60px; /*宽度60px*/
+}
+.bbs section ul li h1{/*选中class="bbs"标签中的section、ul、li、h1标签*/
+    float: left; /*文本或图像会移至父元素中的左侧*/
+    width: 520px; /*宽度520px*/
+    font-size: 16px; /*字体大小16px*/
+    line-height: 35px;/*行高35px*/
+}
+.bbs section ul li p{/*选中class="bbs"标签中的section、ul、li、p标签*/
+    color:#666666; /*字体颜色*/
+    line-height: 25px; /*行高25px*/
+    font-size: 12px; /*字体大小12px*/
+}
+.bbs section ul li p span{/*选中class="bbs"标签中的section、ul、li、span标签*/
+    padding-right :20px;/*右边距20px*/
+}
+
+
+.bbs{
+    
+    background-image: url(../images/1-5.png);
+}

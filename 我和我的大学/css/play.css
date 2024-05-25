@@ -1,0 +1,87 @@
+*{font-family:"微软雅黑";margin: 0px;padding: 0px;}/*选中全局，内外边距为0px，字体微软雅黑，字体大小14px*/
+ul,ol,li{list-style: none;}/*选中ul、ol、li标签，列表样式无*/
+#play{ margin: 0 auto; width:680px; overflow: hidden;}/*选中id=play的标签，居中，宽度680px，溢出隐藏*/
+#play h1{line-height: 40px; font-size:22px;}/*选中id=play的标签下的h1标签，行高40px，字体大小22px*/
+#play ul>li{/*选中id=play的标签下的ul标签下的子代li标签，向左浮动，宽度220px，高度308px，溢出隐藏，相对位置*/
+    float: left;
+    width: 220px;
+    height: 308px;
+    overflow:hidden;
+    position: relative;
+}
+#play ol li {height: 37px; padding: 0px 8px 0 10px; position: relative;}/*选中id=play的标签下的ol下的li标签，高度37px，内边距右边距8px，左边距10px，相对位置*/
+#play ul>li>span{/*选中id=play的标签下的ul标签下的所有子代span标签，显示，绝对位置，距左边0px，距下边0px，字体大小25px，字体颜色白色，字体加粗，上内边距5px，左边距10px，层级100*/
+    display: block;
+    position:absolute; 
+    left:0;
+    bottom:0;
+    font-size:25px;
+    color:#ffffff; 
+    font-weight: bold;
+    padding: 5px 10px; 
+    z-index:100;
+}
+#play ul>li>p{/*选中id=play的标签下的ul标签下的所有子代p标签，绝对位置，距左边50px，下边10px，字体颜色白色*/
+    position: absolute; left: 50px; bottom:10px; 
+    color: #ffffff;
+}
+#play ol{/*选中id=play的标签下的ol标签，内上边距13px，内右边距5px*/
+    padding-top:13px; padding-right: 5px;
+}
+#play ol li span{/*选中id=play的标签下的ol标签下的li标签下的span标签，在同一行显示，字体颜色白色，外右边距5px，宽度20px，高度20px，字体大小12px，字体加粗，文本居中*/
+    display: inline-block;color:#ffffff;margin-right: 5px;
+    width: 20px; height:20px; font-size: 12px; font-weight: bold;
+    text-align: center;
+}
+#play ol li p{/*选中id=play的标签下的ol标签下的li标签下的p标签，绝对位置，距右边0px，上边3px，字体颜色白色，背景色#f0a30f，内右边距8px，字体大小12px，隐藏*/
+    position: absolute;right: 0;top: 3px; color:#ffffff; 
+    background:#f0a30f;padding:0 8px; font-size: 12px ; display:none;
+}
+.sec_play1{
+    height: 730px;
+    width: auto;
+    background-color: #f0a30f;
+    margin-top: 2px;
+}
+.sec_play1 h1{line-height: 25px; font-size:22px;}
+
+.sec_play1 ul>li{/*选中id=play的标签下的ul标签下的子代li标签，向左浮动，宽度220px，高度308px，溢出隐藏，相对位置*/
+    overflow:hidden;
+    position: relative;
+}
+
+.sec_play1 img{ 
+    height: 284px;width: 230px;
+    
+}
+
+.sec_play1>ul>li{
+    float: left;
+    padding: 5px 25px 5px 35px;
+    margin: 5px 5px 5px 5px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+video {
+    width: 80%;
+    border-radius: 25px;
+    position: relative;
+    top: 220px;
+    left: 50%;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    transform: translate(-50%, -50%);
+    }

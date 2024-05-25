@@ -1,0 +1,50 @@
+
+        body{
+            background-image: url(../bjt1.png);
+            margin: 0px;
+            background-size:100%;
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+        }
+        .shou{
+            margin: 0 auto;
+            width: 914px;
+
+            background-color: #ffffff;
+        }
+        .nav{
+            background-image: url(../blue.png);
+            padding-left: 24px;
+            height: 85px;     
+            
+        }
+        .line{
+            padding-right: 22px;
+            color: #ffffff;
+        }
+        .ul_1{
+            text-align: center;
+        }
+        .ul_1 li{
+            list-style: none;
+            float: left;
+            color: #ffffff;
+            padding-top: 7px;
+        }
+        .ul_1 li a{
+            color: #ffffff;
+            text-decoration: none;
+            padding-right: 22px;
+            text-align: center;
+        }
+        .ul_1 li a:hover{
+            text-decoration-line:underline;
+        }
+        .li_1{
+            font-size: 20px;
+            color: #ffffff;
+            font-family: 'Lucida Sans';
+            margin: 0 auto;
+            padding-top: 2px;
+            padding-bottom: 0px;
+        }
