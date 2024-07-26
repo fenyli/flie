@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Greendash Dashboard</title>
+  <!-- Iconic Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../vendors/iconic-fonts/font-awesome/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../vendors/iconic-fonts/flat-icons/flaticon.css">
+  <link rel="stylesheet" href="../vendors/iconic-fonts/cryptocoins/cryptocoins.css">
+  <link rel="stylesheet" href="../vendors/iconic-fonts/cryptocoins/cryptocoins-colors.css">
+  <!-- Bootstrap core CSS -->
+  <link href="http://cdn.bootstrapmb.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery UI -->
+  <link href="../assets/css/jquery-ui.min.css" rel="stylesheet">
+  <!-- Page Specific CSS (Slick Slider.css) -->
+  <link href="../assets/css/slick.css" rel="stylesheet">
+  <!-- Greendash styles -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
+  <style>
+    #content {
+      background-image: url(../assets/img/login.png);
+      background-size: 100%;
+      display: flex;
+      justify-content: center;
+      /* margin: 100px; */
+      height: 100vh;
+      align-content: center;
+    }
+
+    #login {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-200px, -200px);
+      background-color: white;
+      height: 450px;
+      border-radius: 4%;
+      box-shadow: 5px 4px 20px #828282
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+<div id="content">
+  <div id="login" style='width: 400px;'>
+    <div class="ms-panel-header">
+      <h6>找回密码</h6>
+    </div>
+    <div class="ms-panel-body">
+      <form class="needs-validation" novalidate="">
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="validationCustom01">账户：</label>
+            <div class="input-group">
+              <input type="text" v-model="username" class="form-control" id="validationCustom01" placeholder="请输入账户" required="required">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="validationCustom03">邮箱</label>
+            <div class="input-group">
+              <input type="text" v-model="email" class="form-control" id="validationCustom03" placeholder="请输入邮箱" required="required">
+            </div>
+          </div>
+        </div>
+
+        <button @click="find" style="background-color: #268E77;border-radius: 50px;"
+                class="btn btn-primary mt-4 d-block w-100" type="button">找回密码</button>
+        <a style="background-color: #268E77;border-radius: 50px;" class="btn btn-primary mt-4 d-block w-100"
+           href="./login.html">前往登录</a>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- SCRIPTS -->
+<!-- Global Required Scripts Start -->
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="http://cdn.bootstrapmb.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="../assets/js/perfect-scrollbar.js"> </script>
+<script src="../assets/js/jquery-ui.min.js"> </script>
+<!-- Global Required Scripts End -->
+
+<!-- Page Specific Scripts Start -->
+<script src="../assets/js/moment.js"> </script>
+<script src="../assets/js/jquery.webticker.min.js"> </script>
+<!--  <script src="../assets/js/Chart.bundle.min.js"> </script>-->
+<!--  <script src="../assets/js/Chart.Financial.js"> </script>-->
+<!--  <script src="../assets/js/table-line.js"> </script>-->
+<!--  <script src="../assets/js/index-chart.js"> </script>-->
+
+<script src="../assets/js/d3.v3.min.js"> </script>
+<script src="../assets/js/topojson.v1.min.js"> </script>
+<!--  <script src="../assets/js/datamaps.all.min.js"> </script>-->
+<!--  <script src="../assets/js/index-map.js"> </script>-->
+
+<!-- Page Specific Scripts End -->
+
+<!-- Greendash core JavaScript -->
+<script src="../assets/js/framework.js"></script>
+
+<!-- Settings -->
+<script src="../assets/js/settings.js"></script>
+<script src="../assets/js/vue.js"></script>
+<script src="../assets/js/axios.min.js"></script>
+<script>
+  var vm = new Vue({
+    el:"#content",
+    data:{
+      username:"",
+      email:""
+    },
+    methods:{
+      find:function(){
+        //通过axios 来发送ajax请求
+        axios.post('/user/find',`username=${this.username}&email=${this.email}`).then(
+                response => {
+
+                  if(response.data.code == 200){//登录是成功的
+                    //1、接收 servlet 给我们返回来的用户信息
+                    //JSON.stringify(response.data.data) 转成json字符串 {"id":10,"name":"zs"}
+                    //alert(JSON.stringify(response.data.data))
+                    localStorage.setItem("user",JSON.stringify(response.data.data));
+                    //跳转到登录成功页
+                    // location.href = "./index.html"
+                    alert("新密码已发送至你的邮箱！请注意查收！");
+                  }else{//登录是失败的
+                    alert(response.data.msg);
+                  }
+                  console.log("===========>" + response.data.code + ",=========>" + response.data.msg);
+                },
+                error => {console.log('失败了',error);
+                  alert("用户名不存在！");}
+        )
+      }
+    }
+  })
+
+
+
+
+  // function login() {
+  //     var user_name = $("#validationCustom01").val();
+  //     var user_pwd = $("#validationCustom03").val();
+  //     //提交登录请求
+  //     $.ajax({
+  //         url:"/user/login",
+  //         type:"post",
+  //         data:{user_name:user_name,user_pwd:user_pwd},
+  //         dataType:"json",
+  //         success:function(res){
+  //             if(res.code == 200){//登录成功
+  //                 //保存数据
+  //                 sessionStorage.setItem("user",JSON.stringify(res.data));
+  //                 location.href = './index.html'
+  //             }
+  //             if(res.code == 500){
+  //                 alert(res.msg)
+  //             }
+  //         }
+  //     })
+  //
+  // }
+</script>
+</body>
+
+</html>

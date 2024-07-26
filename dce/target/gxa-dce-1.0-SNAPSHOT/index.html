@@ -1,0 +1,77 @@
+<html>
+<head>
+    <script type="text/javascript"  src="./assets/js/vue.js"></script>
+</head>
+<body>
+<h2>Hello World!</h2>
+    <form action="/login" method="post">
+        username:<input type="text" name="username"><br>
+        password:<input type="password" name="pwd"><br>
+        <input type="submit" value="login">
+    </form>
+    <div id="app">
+        <input type="text" v-model="content">
+        <h1>{{content}}</h1>
+
+        <input type="button" value="click" v-on:click="click01">
+
+        <input type="button" value="click" @click="click01">
+        <table>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>age</th>
+                <th>gender</th>
+            </tr>
+            <tr v-for="user in userList">
+                <td>{{user.id}}</td>
+                <th>{{user.name}}</th>
+                <th>{{user.age}}</th>
+                <th>{{user.gender}}</th>
+            </tr>
+        </table>
+        <hr>
+        username:<input type="text" name="username" v-model="username"><br>
+        password:<input type="password" name="pwd" v-model="pwd"><br>
+        city:
+            <select name="city" v-model="city">
+                <option value="01">chengdu</option>
+                <option value="02">beijing</option>
+                <option value="03">chongqing</option>
+            </select>
+        <br>
+        gender:male<input type="radio" name="gender" value="01" v-model="gender">
+        female<input type="radio" name="gender" value="02" v-model="gender"><br>
+
+        hobby:
+        java:<input type="checkbox" name="hobby" value="01" v-model="hobby">
+        youxi:<input type="checkbox" name="hobby" value="02" v-model="hobby">
+        chi:<input type="checkbox" name="hobby" value="03" v-model="hobby">
+        shui:<input type="checkbox" name="hobby" value="04" v-model="hobby">
+        <br>
+    </div>
+    <script type="text/javascript">
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                content:"hello,vue",
+                userList:[
+                    {id:1,name:"zy",age:18,gender:"male"},
+                    {id:2,name:"zyy",age:28,gender:"female"},
+                    {id:3,name:"tfj",age:20,gender:"male"}
+                ],
+                username:'zy',
+                pwd:'',
+                city:'02',
+                gender:'02',
+                hobby:["02","03"]
+            },
+            methods:{
+                click01:function(){
+                    alert("click");
+                }
+            }
+        })
+    </script>
+</body>
+</html>
