@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0"
+         metadata-complete="true">
+
+    <servlet>
+      <servlet-name>loginServlet</servlet-name>
+      <servlet-class>com.gxa.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>loginServlet</servlet-name>
+      <url-pattern>/user/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>findServlet</servlet-name>
+        <servlet-class>com.gxa.servlet.FindServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>findServlet</servlet-name>
+        <url-pattern>/user/find</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>supplierQueryServlet</servlet-name>
+        <servlet-class>com.gxa.servlet.SupplierQueryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>supplierQueryServlet</servlet-name>
+        <url-pattern>/supplierList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>supplierAddServlet</servlet-name>
+        <servlet-class>com.gxa.servlet.SupplierAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>supplierAddServlet</servlet-name>
+        <url-pattern>/supplierAdd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>supplierDelServlet</servlet-name>
+        <servlet-class>com.gxa.servlet.SupplierDelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>supplierDelServlet</servlet-name>
+        <url-pattern>/supplierDel</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>goodsQueryServlet</servlet-name>
+        <servlet-class>com.gxa.servlet.GoodsQueryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>goodsQueryServlet</servlet-name>
+        <url-pattern>/goodsList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>goodsAddServlet</servlet-name>
+        <servlet-class>com.gxa.servlet.GoodsAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>goodsAddServlet</servlet-name>
+        <url-pattern>/goodsAdd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>goodsDelServlet</servlet-name>
+        <servlet-class>com.gxa.servlet.GoodsDelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>goodsDelServlet</servlet-name>
+        <url-pattern>/goodsDel</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CaigouAddServlet</servlet-name>
+        <servlet-class>com.gxa.servlet.CaigouAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CaigouAddServlet</servlet-name>
+        <url-pattern>/caigou_add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CaigouQueryServlet</servlet-name>
+        <servlet-class>com.gxa.servlet.CaigouQueryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CaigouQueryServlet</servlet-name>
+        <url-pattern>/caigou_query</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CaigouDeleteServlet</servlet-name>
+        <servlet-class>com.gxa.servlet.CaigouDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CaigouDeleteServlet</servlet-name>
+        <url-pattern>/caigou_delete</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>staffQueryServlet</servlet-name>
+        <servlet-class>com.gxa.servlet.StaffQueryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>staffQueryServlet</servlet-name>
+        <url-pattern>/staffList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>staffAddServlet</servlet-name>
+        <servlet-class>com.gxa.servlet.StaffAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>staffAddServlet</servlet-name>
+        <url-pattern>/staffAdd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>staffDelServlet</servlet-name>
+        <servlet-class>com.gxa.servlet.StaffDelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>staffDelServlet</servlet-name>
+        <url-pattern>/staffDel</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sellAddServlet</servlet-name>
+        <servlet-class>com.gxa.servlet.SellAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sellAddServlet</servlet-name>
+        <url-pattern>/sell_add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sellQueryServlet</servlet-name>
+        <servlet-class>com.gxa.servlet.SellQueryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sellQueryServlet</servlet-name>
+        <url-pattern>/sell_query</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sellDeleteServlet</servlet-name>
+        <servlet-class>com.gxa.servlet.SellDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sellDeleteServlet</servlet-name>
+        <url-pattern>/sell_delete</url-pattern>
+    </servlet-mapping>
+</web-app>
